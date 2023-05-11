@@ -1,0 +1,25 @@
+﻿@model Taskm 
+
+<h1> Update Data</h1>
+
+<form method="post" asp-action="Update" asp-controller="Task" > <!-- need of form element in HTML 5-->
+   
+    <div>
+        <label asp-for="id">ID</label>
+        <input asp-for="id" readonly/> 
+    </div>
+    <div>
+        <label asp-for="userId">User ID</label>
+        <input asp-for="userId" />
+    </div>
+    <div>
+        <label asp-for="title">Title</label>
+        <input asp-for="title" />
+    </div>
+     <div>
+        <label asp-for="completed">Completed</label>
+        <input asp-for="completed" />
+    </div>
+
+    <button type="submit">Update</button>
+</form>
